@@ -1,0 +1,39 @@
+{{ template "head" .}}
+
+<body>
+    <div class="container">
+
+        <div class="row mt-5">
+            <div class="col-md-2">
+                <a class="home-button" href="/">&larr; Home</a>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div >
+
+        <div class="row mt-5">
+            <div class="col-md-2">
+                <p>{{ .Title }}</p>
+            </div>
+            <div class="col-md-6">
+
+                <ul class="nav-list">
+                    {{ range .Posts }}
+                        <li>
+                            <a href="{{ .URL }}" class="nav-item">
+                                {{ .Title }}
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div >
+
+    </div>
+</body>
+</html>

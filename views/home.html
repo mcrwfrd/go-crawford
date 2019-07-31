@@ -1,0 +1,41 @@
+{{ template "head" .}}
+
+<body>
+<div class="container">
+
+    <div class="row mt-5">
+        <div class="col-md-1">
+            <p class="text-muted">Bio</p>
+        </div>
+        <div class="col-md-6">
+            <p>My name is Michael Crawford. I'm a software developer living on Vancouver Island, and I'm looking for my next role at a great company.</p>
+            <p>From 2017&ndash;2019 I worked at Lightspeed POS in Montreal. Before that I was studying Math and Physics at McGill University.</p>
+            <p>At work I live on the command line and love working on infrastructure and automation. I try to spend most of my spare time surfing at one of the many uncrowded waves near my home.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="orange-block"></div>
+        </div>
+    </div >
+
+    <div class="row mt-2">
+        <div class="col-md-1">
+            <p class="text-muted">Links</p>
+        </div>
+        <div id="contact" class="col-md-6">
+            <p><a href="/posts.html">Posts</a></p>
+            <p id="email"><a href="#" onclick="showEmail()">Email</a></p>
+            <p><a href="https://github.com/mcrwfrd">GitHub</a></p>
+            <p><a href="https://bandcamp.com/michaelcrwfrd">Bandcamp</a></p>
+            <p><a href="https://www.instagram.com/michaeljohncrawford/">Instagram</a></p>
+            <p><a href="https://www.linkedin.com/in/mcrwfrd/">LinkedIn</a></p>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div >
+
+</div>
+
+{{ template "scripts" }}
+
+</body>
+</html>
